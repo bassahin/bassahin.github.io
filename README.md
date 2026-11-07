@@ -65,3 +65,5 @@ Then open <http://localhost:4000>.
 - RSS feed (`/feed.xml`) and SEO/social preview tags
 - Optional comment section via giscus (GitHub Discussions)
 - No JavaScript or external requests apart from the comment section
+
+<!-- Access test: safe to remove. -->
