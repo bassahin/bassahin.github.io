@@ -1,0 +1,31 @@
+{%- comment -%}
+  Comment section powered by giscus (https://giscus.app), which stores
+  comments in this repository's GitHub Discussions.
+
+  It renders only when `comments.enabled` is true and the giscus IDs are
+  filled in in _config.yml. Add `comments: false` to a post's front matter
+  to turn comments off for that post.
+{%- endcomment -%}
+{%- assign giscus = site.comments.giscus -%}
+{%- if site.comments.enabled and page.comments != false and giscus.repo_id != "" and giscus.category_id != "" and giscus.repo_id and giscus.category_id %}
+<section class="comments" aria-labelledby="comments-title">
+  <h2 id="comments-title">Comments</h2>
+  <script src="https://giscus.app/client.js"
+          data-repo="{{ giscus.repo }}"
+          data-repo-id="{{ giscus.repo_id }}"
+          data-category="{{ giscus.category }}"
+          data-category-id="{{ giscus.category_id }}"
+          data-mapping="{{ giscus.mapping | default: 'pathname' }}"
+          data-strict="1"
+          data-reactions-enabled="{{ giscus.reactions | default: '1' }}"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
+          data-lang="{{ page.lang | default: site.lang | default: 'en' }}"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+  <noscript>Enable JavaScript to see and post comments.</noscript>
+</section>
+{%- endif %}

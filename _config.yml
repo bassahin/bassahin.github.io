@@ -1,0 +1,78 @@
+# ---------------------------------------------------------------
+# Site settings — edit these first.
+# ---------------------------------------------------------------
+title: Sahin Bas
+tagline: Notes, ideas and things I'm learning.
+description: >-
+  A personal blog by Sahin Bas — writing about code, projects and
+  whatever I'm curious about this week.
+author:
+  name: Sahin Bas
+  github: bassahin
+  # email: you@example.com
+  # twitter: yourhandle
+  # linkedin: yourhandle
+
+url: "https://bassahin.github.io"
+baseurl: ""
+lang: en
+
+# Navigation links shown in the header (in order).
+nav:
+  - title: Blog
+    url: /
+  - title: Archive
+    url: /archive/
+  - title: Tags
+    url: /tags/
+  - title: About
+    url: /about/
+
+# ---------------------------------------------------------------
+# Comments — powered by giscus (GitHub Discussions).
+# Setup steps are in README.md. The comment section stays hidden
+# until repo_id and category_id are filled in.
+# ---------------------------------------------------------------
+comments:
+  enabled: true
+  giscus:
+    repo: bassahin/bassahin.github.io
+    repo_id: ""        # from https://giscus.app, e.g. "R_kgDO..."
+    category: Comments
+    category_id: ""    # from https://giscus.app, e.g. "DIC_kwDO..."
+    mapping: pathname
+
+# ---------------------------------------------------------------
+# Build settings — these work on GitHub Pages out of the box.
+# ---------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /:year/:month/:day/:title/
+timezone: Europe/Istanbul
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .bundle
