@@ -1,0 +1,64 @@
+# ---------------------------------------------------------------
+# Site settings — edit these first.
+# ---------------------------------------------------------------
+title: Sahin Bas
+tagline: Notes, ideas and things I'm learning.
+description: >-
+  A personal blog by Sahin Bas — writing about code, projects and
+  whatever I'm curious about this week.
+author:
+  name: Sahin Bas
+  github: bassahin
+  # email: you@example.com
+  # twitter: yourhandle
+  # linkedin: yourhandle
+
+url: "https://bassahin.github.io"
+baseurl: ""
+lang: en
+
+# Navigation links shown in the header (in order).
+nav:
+  - title: Blog
+    url: /
+  - title: Archive
+    url: /archive/
+  - title: Tags
+    url: /tags/
+  - title: About
+    url: /about/
+
+# ---------------------------------------------------------------
+# Build settings — these work on GitHub Pages out of the box.
+# ---------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /:year/:month/:day/:title/
+timezone: Europe/Istanbul
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .bundle
