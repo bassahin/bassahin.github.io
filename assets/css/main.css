@@ -256,6 +256,14 @@ div.highlighter-rouge pre { margin: 0; }
 .post-nav a:hover { color: var(--accent); }
 .post-nav .next { text-align: right; grid-column: 2; }
 
+.comments {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.comments h2 { font-size: 1.3rem; margin: 0 0 1.25rem; }
+.comments noscript { color: var(--muted); font-family: var(--font-ui); font-size: 0.95rem; }
+
 .not-found .face { font-family: var(--font-mono); color: var(--muted); margin-top: 2rem; }
 
 /* ---------------------------------------------------------------

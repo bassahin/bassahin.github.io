@@ -29,6 +29,20 @@ nav:
     url: /about/
 
 # ---------------------------------------------------------------
+# Comments — powered by giscus (GitHub Discussions).
+# Setup steps are in README.md. The comment section stays hidden
+# until repo_id and category_id are filled in.
+# ---------------------------------------------------------------
+comments:
+  enabled: true
+  giscus:
+    repo: bassahin/bassahin.github.io
+    repo_id: ""        # from https://giscus.app, e.g. "R_kgDO..."
+    category: Comments
+    category_id: ""    # from https://giscus.app, e.g. "DIC_kwDO..."
+    mapping: pathname
+
+# ---------------------------------------------------------------
 # Build settings — these work on GitHub Pages out of the box.
 # ---------------------------------------------------------------
 markdown: kramdown

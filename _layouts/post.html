@@ -31,4 +31,6 @@ layout: default
     <a class="next" href="{{ page.next.url | relative_url }}"><span>Newer →</span>{{ page.next.title | escape }}</a>
     {%- endif %}
   </nav>
+
+  {% include comments.html %}
 </article>
